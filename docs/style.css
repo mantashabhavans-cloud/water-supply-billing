@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f7f9;
+    color: #333;
+    min-height: 100vh;
+}
+
+header {
+    background: #006d77;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 16px;
+}
+
+main {
+    width: 90%;
+    max-width: 850px;
+    margin: 40px auto;
+}
+
+.billing-card,
+.bill-result {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 25px;
+}
+
+.billing-card h2,
+.bill-result h2 {
+    color: #006d77;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 7px;
+    margin-top: 15px;
+}
+
+input,
+select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #006d77;
+}
+
+button {
+    margin-top: 25px;
+    padding: 13px;
+    background: #006d77;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #00545c;
+}
+
+.bill-result p {
+    margin: 12px 0;
+    font-size: 16px;
+}
+
+.total {
+    margin-top: 20px !important;
+    padding: 15px;
+    background: #e8f5f6;
+    border-radius: 6px;
+    color: #006d77;
+    font-size: 20px !important;
+}
+
+footer {
+    text-align: center;
+    background: #003f46;
+    color: white;
+    padding: 18px;
+    margin-top: 40px;
+}
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    main {
+        width: 95%;
+    }
+
+    .billing-card,
+    .bill-result {
+        padding: 20px;
+    }
+}
